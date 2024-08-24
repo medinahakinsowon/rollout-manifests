@@ -1,10 +1,10 @@
 node {
     def app
     
-    env.IMAGE = 'laly9999/bluegreen-rollout'
+    env.IMAGE = 'ooghenekaro/blue-green-rollout-july24'
 
     stage('Clone repository') {
-             git branch: 'main', url: 'https://github.com/lily4499/rollout-manifests.git'  
+             git branch: 'main', url: 'https://github.com/ooghenekaro/rollout-manifests.git'  
     }
 
     stage('Update GIT') {
